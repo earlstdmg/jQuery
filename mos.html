@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: lightblue
+            
+        }
+
+        h1 {
+            color: #3498db; 
+        }
+
+        #desc {
+            background-color: ##E6E6FA; 
+            padding: 10px;
+        }
+
+        #jQuery {
+            background-color: ##E6E6FA; 
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: green; 
+            color: #E6E6FA; 
+            padding: 8px 15px;
+            margin: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <h1>jQuery</h1>
+    <div> <p id="desc">Hinahanap ka na ng puso ko
+
+Baby, ikaw lang talaga
+Ang nami-miss ko sa tuwi-tuwina
+Sa tuwi-tuwina.</p></div>
+    <div id="jQuery">
+        <button id="btnClick">Click</button>
+        <p>Grade 12 Cooper Student</p>
+        <button id="showMe">Show Me</button>
+        <button id="hideMe">Hide Me</button>
+        <button id="btnToggle">Toggle Button</button>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="jquery-3.7.1.js"></script>
+    <script>
+        console.log($);
+       
+        
+        $(document).ready(function(){
+            $("#btnClick").click(function(){
+                alert("Hello");
+            });
+        });
+
+        $("#showMe").click(function(){
+    $("#desc").show();
+});
+
+$("#hideMe").click(function(){
+    $("#desc").hide();
+});
+
+
+$("#btnToggle").click(function(){
+    $("#toggleDemo").toggle();
+});
+</script>
+</script>
+</body>
+</html>
